@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<title>Dojo Survey</title>
+
+<style>
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+
+body {
+    background-color: LightBlue;
+    display: inline-block;
+/*    margin-left:500px;*/
+}
+
+.form-group{
+	padding: 20px;
+
+}
+
+
+ .outerbox{
+    background-color: white;
+    display: inline-block;
+    text-align:center;
+    width:300px;
+    margin-left:200%;
+    margin-top:50%;
+   }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class = "outerbox">
+
+<form action = '/process' method = 'post'>
+
+  <div class="form-group">
+
+    <label for="Your Name">Your Name</label>
+
+    <input type="text" name="name" >
+
+  </div>
+
+  <div class="form-group">
+
+    <label for="Dojo Location">Dojo Location:</label>
+
+    <select class="form-control" name = "location">
+
+      <option>San Jose</option>
+      <option>San Francisco</option>
+      <option>San Mateo</option>
+
+    </select>
+
+  </div>
+
+    <div class="form-group">
+
+    <label for="exampleFormControlSelect1">Favorite Language:</label>
+    <select class="form-control" name = "language">
+
+      <option>Python</option>
+      <option>JavaScript</option>
+      <option>Java</option>
+      <option>HTML</option>
+      <option>CSS</option>
+
+    </select>
+
+  </div>
+
+
+  <div class="form-group">
+
+    <label for="exampleFormControlTextarea1">Comments (optional):</label>
+    <textarea class="form-control" rows="3" name = "comment"></textarea>
+
+
+</div>
+
+	<button type="submit" class="btn btn-primary" value = "Submit">Submit</button>  
+
+
+</form>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Results</title>
+
+<style>
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+
+body {
+    background-color: LightBlue;
+    display: inline-block;
+}
+
+ .outerbox{
+    background-color: white;
+    display: inline-block;
+    text-align:center;
+    width:300px;
+    margin-left:200%;
+    margin-top:50%;
+   }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class = "outerbox">
+
+  <h1> Submitted Info </h1>
+  <p></p>
+  <p> Name: <%= result.name %></p>
+  <p> Dojo Location: <%= result.location %></p>
+  <p> Favorite Language: <%= result.language %></p>
+  <p> Comment: <%= result.comment %></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
